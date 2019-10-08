@@ -1,0 +1,7 @@
+*.pyc
+build
+dist
+.DS_Store
+README.rst
+pitchfork.egg-info
+.idea/**
