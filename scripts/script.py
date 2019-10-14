@@ -36,10 +36,11 @@ with open(filepath) as fp:
 
 # Store reviews in array
     cnt -= 1
-    aux = 1
+    aux = 0
     while(cnt >= 0):
         artist = artists[cnt]
-        print("Parsing artist " + artist + "(" + str(aux) + "/" + str(numberArtists) + ")")
+        aux += 1
+        print("Parsing artist " + artist + " (" + str(aux) + "/" + str(numberArtists) + ")")
         while(char < 123):
             try:
                 tempReview = pitchfork.search( artist , str(chr(char)))
